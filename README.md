@@ -6,6 +6,9 @@ Simple Pub/Sub module
 ### Usage
 
 Please copy the source code to use.
+
+__global__
+
 ```js
 var Message = require('message');
 
@@ -15,7 +18,11 @@ Message.on('chaneg', doSomething);
 Message.off('chaneg', doSomething);
 // publish globale message
 Message.emit('change', data);
+```
 
+__local__
+
+```js
 // Local Message instance
 var msg = new Message()
 
